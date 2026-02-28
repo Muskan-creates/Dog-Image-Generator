@@ -9,6 +9,7 @@ btn.addEventListener("click",async()=>{
     console.log(link);
 });
 
+// API CALLING
 async function getimg(){
     try{
         let res=await axios.get(url);
@@ -17,4 +18,5 @@ async function getimg(){
         console.log("Error:-",err);
         return "No image Found";
     }
+
 }
